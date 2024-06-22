@@ -1,0 +1,6 @@
+torchtext==0.6.0
+spacy
+dill
+tqdm
+Flask
+flask-cors
