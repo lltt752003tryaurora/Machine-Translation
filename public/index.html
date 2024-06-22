@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Machine Translation</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Teko:400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
+    <!-- Page Container -->
+    <section id="contact">
+      <div class="section-content">
+        <h1 class="section-header">
+          <span
+            class="content-header wow fadeIn"
+            data-wow-delay="0.2s"
+            data-wow-duration="2s"
+          >
+            Translate</span
+          >
+          your text
+        </h1>
+        <h3>Write and click <b>TRANSLATE</b></h3>
+      </div>
+      <div class="contact-section">
+        <div class="container">
+          <form class="d-flex gap-2">
+            <div class="col-6 form-line">
+              <div class="form-group">
+                <label for="from">English</label>
+              </div>
+              <div class="form-group">
+                <textarea
+                  class="form-control"
+                  id="original"
+                  placeholder="Enter Your Text"
+                ></textarea>
+              </div>
+            </div>
+            <div class="col-6">
+              <div id="machine">
+                <div class="form-group">
+                  <label for="from">Vietnamese Machine Translation</label>
+                </div>
+                <div class="form-group">
+                  <textarea
+                    class="form-control"
+                    id="translated-machine"
+                    placeholder="Translated text will be here"
+                    readonly
+                  ></textarea>
+                </div>
+              </div>
+              <div id="google">
+                <div class="form-group">
+                  <label for="from">Vietnamese Google</label>
+                </div>
+                <div class="form-group">
+                  <textarea
+                    class="form-control"
+                    id="translated-google"
+                    placeholder="Translated text will be here"
+                    readonly
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="ms-10 text-end mt-5">
+            <button id="btnTrans" type="button" class="btn btn-primary">
+              <i class="fa fa-globe" aria-hidden="true"></i
+              ><span class="text-lg"> Translate</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@vitalets/google-translate-api@3.0.0/dist/translate.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
